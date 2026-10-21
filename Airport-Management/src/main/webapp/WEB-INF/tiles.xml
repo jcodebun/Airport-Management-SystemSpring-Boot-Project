@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+ <tiles-definitions>
+ 
+ <!-- Base define  -->
+ <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="side" value="/WEB-INF/basefragments/_side.jsp" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+ </definition> 
+ <!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+    </definition> 
+    
+ <!-- Home Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition> 
+    <!-- Login Page -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition>  
+    
+    <definition name="signUp" extends="base.definition">  
+        <put-attribute name="title" value="User Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userRegister.jsp" />  
+    </definition>
+    <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition>
+     <definition name="forgetPassword" extends="base.definition">  
+        <put-attribute name="title" value="Forget Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_forgetPassword.jsp" />  
+    </definition>
+    <!-- USER LIST -->
+    <definition name="userList" extends="base.definition">  
+        <put-attribute name="title" value="User List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userList.jsp" />  
+    </definition>
+    <!-- Approve Page  -->
+    <definition name="approvePage" extends="base.definition">  
+        <put-attribute name="title" value="Approve Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_approvePage.jsp" />  
+    </definition>
+    
+    <!-- USER pilot LIST -->
+    <definition name="pilotList" extends="base.definition">  
+        <put-attribute name="title" value="User List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_pilotList.jsp" />  
+    </definition>
+    <!-- Approve Page  -->
+    <definition name="approvePilot" extends="base.definition">  
+        <put-attribute name="title" value="Approve Pilot" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_approvePilot.jsp" />  
+    </definition>
+    <!-- Add a Plane -->
+    <definition name="plane" extends="base.definition">  
+        <put-attribute name="title" value="Approve Pilot" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_plane.jsp" />  
+    </definition>
+    <!-- PLANE LIST -->
+    <definition name="planeList" extends="base.definition">  
+        <put-attribute name="title" value="Plane List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_planeList.jsp" />  
+    </definition>
+    <!-- Add Hanger -->
+    <definition name="addHanger" extends="base.definition">  
+        <put-attribute name="title" value="Add Hanger" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addHanger.jsp" />  
+    </definition>
+     <!-- Hanger LIST -->
+    <definition name="hangerList" extends="base.definition">  
+        <put-attribute name="title" value="Hanger List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_hangerList.jsp" />  
+    </definition>
+     <!-- Allot Hanger -->
+    <definition name="allotHanger" extends="base.definition">  
+        <put-attribute name="title" value="Allot Hanger" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allotHanger.jsp" />  
+    </definition>
+    <!-- Allot Hanger List -->
+    <definition name="allotHangerList" extends="base.definition">  
+        <put-attribute name="title" value="ALlot Hanger List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allotHangerList.jsp" />  
+    </definition>
+    <!-- Allot Hanger status update -->
+    <definition name="updateAllotHangerStatus" extends="base.definition">  
+        <put-attribute name="title" value="ALlot Hanger List Status" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_updateAllotHangerStatus.jsp" />  
+    </definition>
+    <!-- Help -->
+    <definition name="help" extends="base.definition">  
+        <put-attribute name="title" value="Help" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_help.jsp" />  
+    </definition>
+    <!-- Help report-->
+    <definition name="helpList" extends="base.definition">  
+        <put-attribute name="title" value="Help List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_helpList.jsp" />  
+    </definition>
+    <!-- Update Flight Plan-->
+    <definition name="updateFlightPlan" extends="base.definition">  
+        <put-attribute name="title" value="Update Flight Plan" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_updateFlightPlan.jsp" />  
+    </definition>
+    <!-- Update Flight Plan List-->
+    <definition name="updateFlightPlanList" extends="base.definition">  
+        <put-attribute name="title" value="Update Flight Plan List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_updateFlightPlanList.jsp" />  
+    </definition>
+    <!-- Update Resources-->
+    <definition name="updateResource" extends="base.definition">  
+        <put-attribute name="title" value="Update Resources" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_updateResources.jsp" />  
+    </definition>
+     <!-- Add work schedule-->
+    <definition name="addWorkSchedule" extends="base.definition">  
+        <put-attribute name="title" value="Add Work Schedule" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addWorkSchedule.jsp" />  
+    </definition>
+    <!-- View work schedule-->
+    <definition name="viewWorkSchedule" extends="base.definition">  
+        <put-attribute name="title" value="View Work Schedule" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_viewWorkSchedule.jsp" />  
+    </definition>
+    <!-- Pre-flight mode list-->
+    <definition name="flightList" extends="base.definition">  
+        <put-attribute name="title" value="Flight List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_flightList.jsp" />  
+    </definition>
+    <!-- updte Pre-flight mode -->
+    <definition name="updatePreFlightCheckList" extends="base.definition">  
+        <put-attribute name="title" value="Update Flight List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_updatePreFlightChecklist.jsp" />  
+    </definition>
+    <!-- updte Pre-flight mode list -->
+    <definition name="viewPreFlightModeList" extends="base.definition">  
+        <put-attribute name="title" value="View Pre Flight List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_viewPreFlightModeList.jsp" />  
+    </definition>
+    <!-- updte Post-flight mode -->
+    <definition name="updatePostFlightCheckList" extends="base.definition">  
+        <put-attribute name="title" value="Update Post Flight List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_updatePostFlightChecklist.jsp" />  
+    </definition>
+    <!-- updte Post-flight mode list -->
+    <definition name="viewPostFlightModeList" extends="base.definition">  
+        <put-attribute name="title" value="View Post Flight List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_viewPostFlightModeList.jsp" />  
+    </definition>
+    <!-- waypoints -->
+    <definition name="waypoints" extends="base.definition">  
+        <put-attribute name="title" value="Waypoints" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_waypoints.jsp" />  
+    </definition>
+    <!-- dep loc -->
+    <definition name="departureLoc" extends="base.definition">  
+        <put-attribute name="title" value="departureLoc" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_departureLoc.jsp" />  
+    </definition>
+    <!-- des loc -->
+    <definition name="destinationLoc" extends="base.definition">  
+        <put-attribute name="title" value="departureLoc" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_destinationLoc.jsp" />  
+    </definition>
+ </tiles-definitions>      
